@@ -22,6 +22,7 @@
   "dependencies": {
     "@ant-design/pro-layout": "^6.5.0",
     "@umijs/preset-react": "1.x",
+    "rc-queue-anim": "^1.8.5",
     "rc-scroll-anim": "^2.7.6",
     "rc-texty": "^0.2.0",
     "umi": "^3.4.22"

@@ -3,17 +3,54 @@
 }
 
 .welcome-warper {
+  z-index: 0;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  border: 0.013333rem solid red;
   position: relative;
   .welcome-title {
+    z-index: 1;
+    border: 1px solid red;
+    position: absolute;
+    top: calc(50vh - 0.666667rem);
     width: 100vw;
     height: 0.666667rem;
     text-align: center;
     line-height: 0.666667rem;
-    font-size: 0.666667rem;
-    background: #cfc;
+    font-size: 0.5rem;
+  }
+  .welcome-content {
+    z-index: 1;
+    top: calc(50vh - 1.35rem);
+  }
+
+  .welcome-border {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border: 1px solid blue;
+    position: relative;
+    .welcome-border-content {
+      position: absolute;
+      width: 0.5rem;
+      height: 0.5rem;
+      background: blue;
+    }
+    .welcome-border-lefttop {
+      left: 0;
+      top: 0;
+    }
+    .welcome-border-leftbottom {
+      left: 0;
+      bottom: 0;
+    }
+    .welcome-border-righttop {
+      top: 0;
+      right: 0;
+    }
+    .welcome-border-rightbottom {
+      bottom: 0;
+      right: 0;
+    }
   }
 }
